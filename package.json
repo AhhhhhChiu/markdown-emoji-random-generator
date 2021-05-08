@@ -1,0 +1,48 @@
+{
+  "name": "markdown-emoji-random-generator",
+  "displayName": "markdown-emoji-random-generator",
+  "description": "A tool for Markdown Emoji to generat a emoji randomly",
+  "version": "0.0.1",
+  "publisher": "qiubaizhang",
+  "engines": {
+    "vscode": "^1.56.0"
+  },
+  "categories": [
+    "Tools", "Markdown", "Emoji"
+  ],
+  "activationEvents": [
+    "onCommand:helloworld.helloWorld"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "helloworld.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "keybindings":[
+      {
+        "command": "helloworld.helloWorld",
+        "key": "ctrl+e",
+        "mac": "cmd+e"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.56.0",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  }
+}
